@@ -1,7 +1,49 @@
+.hidden {
+  display: none;
+}
+.centralize {
+  margin-left: auto;
+  margin-right: auto;
+}
 hr {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+.welcome-message {
+  padding-top: 70px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.welcome-message h1 {
+  font-size: 50px;
+  font-family: 'Baloo Da', cursive;
+  text-align: center;
+}
+.welcome-message .center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+.welcome-message .center button {
+  width: 200px;
+  height: 40px;
+  background-color: #FF6D6D;
+  border: 0px;
+  border-radius: 5px;
+  font-family: 'Baloo Da', cursive;
+  font-size: 20px;
+  color: white;
+}
+.welcome-message h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.welcome-message .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fa {
   padding-right: 10px;
@@ -33,6 +75,9 @@ body {
 .header h1 {
   color: white;
 }
+.logo-font {
+  font-family: 'Baloo Da', cursive;
+}
 .logo {
   padding-left: 50px;
   font-family: 'Baloo Da', cursive;
@@ -55,6 +100,9 @@ body {
 }
 .side-bar ul li {
   padding-bottom: 10px;
+}
+.side-bar ul li :hover {
+  color: black;
 }
 #side-bar2 {
   margin-top: 400px;
