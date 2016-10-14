@@ -5,16 +5,20 @@
     <link rel="stylesheet" href="givagifts.1.0.0.css" media="screen" title="no title">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Dosis|Eczar|Hind|Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da|Droid+Sans|Fredoka+One|Raleway|Work+Sans" rel="stylesheet">
     <title> GIVAGIFT</title>
 </head>
 
 <body>
 
+
+
     <div class="header">
         <div class="logo">
-            <h1>GIVA<span class="blackit">GIFT </span> <i class="fa fa-gift" aria-hidden="true"></i> </h1>
+            <h1>GIVA<span class="blackit">GIFT </span> <i class="fa fa-gift" aria-hidden="true"></i>    </h1>
         </div>
+<a href=""><h2><i class="fa fa-user-plus" aria-hidden="true"></i>sign up</h2></a>
     </div>
 
 
@@ -27,31 +31,37 @@
           <h2>Helping you find that gift for that birthday that is coming very soon!</h2>
 
           <div class="center">
-            
-            <a href="/home.html"><button type="button" name="button"> ENTER</button></a>
+
+            <!-- <a href="/home.html"></a> -->
+            <button id="enter-button"> ENTER</button>
+
           </div>
 
     </div>
 
 
-
     <div class="sign-in hidden">
+
+
 
         <form class="" method='post'>
 
-            <label for="email"><h4>Email</h4></label>
+
+            <h4>Email:</h4>
             <input type="email" name="name" id="email-input" placeholder="ex:example@giftin.com" required>
-            <label for="password"><h4>Password</h4></label>
+          <h4>Password:</h4>
             <input type="password" name="name" placeholder="ex:gitin123" id="password-input" required>
 
-            <button type="submit" id="login-button" name="submit">Log In</button>
+            <button type="submit" id="facebook-login-button" name="submit">Log in with <span id="whiteit"> Facebook</span> </button>
 
-            <a href="">Forgot Password?</a>
-            <a href=""> Sign Up </a>
+            <a href=""><h2>Forgot Password?</h2></a>
+            <a href=""> <h2>Sign Up !</h2></a>
         </form>
-        <button type="submit" id="facebook-login-button" name="submit">Log in with <span id="whiteit"> Facebook</span> </button>
+        <button type="submit" id="login-button" name="submit">Guest Log In</button>
 
     </div>
+
+
 
 
     <script src="givagifts.1.0.0.js">

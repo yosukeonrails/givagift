@@ -18,24 +18,9 @@ var app = express();
 app.use(bodyParser.json());
 app.use(express.static('build'));
 
-//
-// var Items=  require('./models/posts.js');
-//
-// app.get('/posts',function(req,res){
-//
-//   Post.find(function(err, items) {
-//
-//     if (err) {
-//         return res.status(500).json({
-//             message: 'Internal Server Error'
-//         });
-//     }
-//
-//     res.json(items);
-// });
-//
-//
-// });
+var Users=  require('./models/users.js');
+
+
 
 
 var runServer = function(callback) {

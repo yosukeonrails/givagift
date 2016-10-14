@@ -4,13 +4,13 @@
   "description": "",
   "main": "js/index.js",
   "scripts": {
-    "start":"supervisor server.js",
+    "start": "supervisor server.js",
     "test": "mocha",
     "mkdir": "mkdir -p build",
     "build": "npm run clean && npm run mkdir && npm run build:html  && npm run build:css  && npm run build:js ",
     "watch": "npm run watch:html & npm run watch:js & npm run watch:css ",
     "clean": "rm -rf build",
-    "build:html": "npm run clean:html && cp public/*.html build/ ",
+    "build:html": "npm run clean:html && cp public/*.html build/ && cp -r ./node_modules/materialize-css/dist/fonts build/",
     "watch:html": "npm run build:html && chokidar public/*.html -c 'npm run build:html'",
     "clean:html": "rm -f build/index.html",
     "build:js": "npm run build:js:unminified && npm run build:js:minified",
@@ -37,6 +37,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "jquery": "^3.1.1",
+    "materialize-css": "^0.97.7",
     "mongodb": "^2.2.10",
     "mongoose": "^4.6.3"
   },
